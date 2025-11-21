@@ -1,0 +1,12 @@
+# Dependencies
+/node_modules
+/venv
+/env
+
+# Python specific files
+*.pyc
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db

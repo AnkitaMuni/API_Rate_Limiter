@@ -1,0 +1,29 @@
+https://github.com/microsoftarchive/redis/releases
+
+pip install -r requirements.txt
+
+to run the server: 
+
+$env:REDIS_URL = "redis://localhost:6379"
+python -m waitress --host=127.0.0.1 --port=5000 src.main_server:app
+python src/monitor_redis.py 
+
+to run the tests:
+
+npm install
+pip install coverage
+npm install --save-dev cross-env
+$env:REDIS_URL = "redis://localhost:6379"
+npm test
+npm run coverage-run
+npm run coverage-report
+
+to run pylint, flake8 and bandit:
+
+pip install flake8 bandit pylint
+pylint --version
+bandit --version
+flake8 --version
+python -m pylint src/ > pylint_report.txt
+python -m bandit -r src/ > bandit_report.txt
+python -m flake8 src/ > flake8_report.txt

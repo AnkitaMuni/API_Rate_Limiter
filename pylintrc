@@ -1,0 +1,4 @@
+[MESSAGES CONTROL]
+# List of warnings to globally disable.
+disable=
+    implicit-str-concat

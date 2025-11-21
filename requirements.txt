@@ -1,0 +1,6 @@
+# File: requirements.txt
+flask
+redis
+coverage
+gunicorn
+waitress

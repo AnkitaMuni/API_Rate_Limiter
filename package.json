@@ -1,0 +1,21 @@
+{
+  "name": "api-rate-limiter-project",
+  "version": "1.0.0",
+  "description": "Configurable Fixed Window Rate Limiter using Flask and Redis.",
+  "scripts": {
+    "test": "cross-env PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'",
+    "coverage-run": "cross-env PYTHONPATH=. python -m coverage run --source=src -m unittest discover -s tests -p 'test_*.py'",
+    "coverage-report": "python -m coverage report"
+  },
+  "keywords": [
+    "python",
+    "flask",
+    "redis",
+    "rate-limiting"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

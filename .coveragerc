@@ -1,0 +1,10 @@
+[run]
+# Don't measure coverage for these files
+omit =
+    src/__init__.py
+    src/monitor_redis.py
+    */__main__.py
+
+[report]
+# Show which lines were missed
+show_missing = True
